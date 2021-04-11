@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- set the HandheldFriendly -->
+	<meta name="HandheldFriendly" content="True">
+	<!-- set the description -->
+	<meta name="description"
+		  content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων σε Jakarta EE">
+	<!-- set the Keyword -->
+	<meta name="robots" content="index, follow">
+	<meta name="keywords" content="Jakarta, Jakarta EE, Java, Java EE, Enterprise Programming,
+	δωρεάν, Java Enterprise Programming,
+	 προγραμματισμός, δωρεάν μαθήματα, δωρεάν σεμινάρια, μαθήματα Jakarta EE, σεμινάρια Jakarta EE" />
+<meta name="author" content="Michail Kassapoglou" />
+	<!-- set the page title -->
+	<title>Δωρεάν Μαθήματα Java EE</title>
+	<!-- include google roboto font cdn link -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+	<!-- include the site bootstrap stylesheet -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/plugins.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/colors.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="style.css">
+	<!-- include the site responsive stylesheet -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-150900548-1');
+	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
+</head>
+<body>
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<header id="page-header">
+			<!-- top bar -->
+			<div class="top-bar bg-dark text-gray">
+				<div class="container">
+					<div class="row top-bar-holder">
+						<div class="col-xs-9 col">
+							<!-- bar links -->
+							<ul class="font-lato list-unstyled bar-links">
+								<li>
+									<a href="tel:+30 6976434707">
+										<strong class="dt element-block text-capitalize hd-phone">Phone :</strong>
+										<strong class="dd element-block hd-phone">+(30) 6976434707 </strong>
+										<i class="fas fa-phone-square hd-up-phone hidden-sm hidden-md hidden-lg"><span class="sr-only">phone</span></i>
+									</a>
+								</li>
+								<li>
+									<a href="mailto:michail.kassapoglou@gmail.com">
+										<strong class="dt element-block text-capitalize hd-phone">Email :</strong>
+										<strong class="dd element-block hd-phone">michail.kassapoglou@gmail.com</strong>
+										<i class="fas fa-envelope-square hd-up-phone hidden-sm hidden-md hidden-lg"><span class="sr-only">email</span></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-xs-3 col justify-end">
+							<!-- user links -->
+							<!--<ul class="list-unstyled user-links fw-bold font-lato">-->
+							<!--	<li><a href="#popup1" class="lightbox">Login</a> <span class="sep">|</span> <a href="#popup2" class="lightbox">Register</a></li>-->
+							<!--</ul>-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- header holder -->
+			<div class="header-holder">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6 col-sm-3">
+							<!-- logo -->
+							<div class="logo">
+								<a href="index.html">
+									<img src="images/logo.png" alt="KASSAPOGLOU">
+								</a>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-9 static-block">
+							<!-- nav -->
+							<nav id="nav" class="navbar navbar-default">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								<!-- navbar collapse -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+									<!-- main navigation -->
+									<ul class="nav navbar-nav navbar-right main-navigation text-uppercase font-lato">
+										<li class="dropdown">
+											<a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a>
+											<!-- <ul class="dropdown-menu"> -->
+												<!--<li><a href="home.html">Home</a></li>-->
+											<!--	<li><a href="home2.html">Home 2</a></li>
+												<li><a href="home3.html">Home 3</a></li>-->
+											<!--</ul> -->
+										</li>
+										<li class="dropdown">
+											<a href="https://kassapoglou.github.io/main/training-events.html" >ΠΡΟΓΡΑΜΜΑ</a>
+											<!--<ul class="dropdown-menu"> -->
+												<!--<li><a href="courses-list.html">Course List</a></li>-->
+												<!--<li><a href="course-single.html">Course Single</a></li>-->
+										<!--	</ul> -->
+										</li>
+										<ul class="nav navbar-nav navbar-right main-navigation text-uppercase font-lato">
+											<li class="dropdown">
+												<a href="https://kassapoglou.github.io/main/course-list-all.html">ΜΑΘΗΜΑΤΑ</a>
+												<!-- <ul class="dropdown-menu"> -->
+													<!--<li><a href="home.html">Home</a></li>-->
+												<!--	<li><a href="home2.html">Home 2</a></li>
+													<li><a href="home3.html">Home 3</a></li>-->
+												<!--</ul> -->
+											</li>
+											<li class="dropdown">
+												<a href="#" >ΧΟΡΗΓΟΙ</a>
+												<!--<ul class="dropdown-menu"> -->
+													<!--<li><a href="courses-list.html">Course List</a></li>-->
+													<!--<li><a href="course-single.html">Course Single</a></li>-->
+											<!--	</ul> -->
+											</li>
+										<li class="dropdown">
+											<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ΠΡΟΓΡΑΜΜΑ</a>-->
+											<!--<ul class="dropdown-menu">-->
+												<!--<li><a href="events-list.html">Event List</a></li>-->
+												<!--<li><a href="event-sigle.html">Event Single</a></li>-->
+											<!--</ul>-->
+										</li> 
+										<li class="dropdown">
+											<a href="#" >ΤΕΧΝΟΛΟΓΙΑ</a>
+										<!--	<ul class="dropdown-menu">-->
+											<!--	<li><a href="404.html">404 Page</a></li>
+												<li><a href="about-us.html">About us</a></li>
+												<li><a href="forum.html">Forum Page</a></li>
+												<li><a href="forum-single.html">Forum Single</a></li>
+												<li><a href="instructors-list.html">Instructors List</a></li>
+												<li><a href="instructor-single.html">Instructors Single</a></li>
+												<li><a href="login-register.html">Login &amp; Register</a></li> -->
+										<!--	</ul>-->
+										</li>
+										<li class="dropdown">
+											<a href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+										<!--	<ul class="dropdown-menu">
+												<li><a href="blog.html">Blog List</a></li>
+												<li><a href="blog-single.html">Blog Single</a></li>
+											</ul> -->
+										</li>
+									<!--	<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
+											<ul class="dropdown-menu">
+												<li><a href="shop.html">Shop List</a></li>
+												<li><a href="single-product.html">Shop Single</a></li>
+												<li><a href="cartage.html">Cart Page</a></li>
+												<li><a href="checkout.html">Checkout</a></li>
+											</ul>
+										</li>-->
+										
+									</ul>
+								</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- contain main informative part of the site -->
+		<main id="main">
+			<!-- heading banner -->
+			<header class="heading-banner text-white bgCover" style="background-image: url(images/jakarta.jpg);">
+				<div class="container holder">
+					<div class="align">
+						<h1>Jakarta EE</h1>
+					</div>
+				</div>
+			</header>
+			<!-- breadcrumb nav -->
+			<nav class="breadcrumb-nav">
+				<div class="container">
+					<!-- breadcrumb -->
+					<ol class="breadcrumb">
+						<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
+						<li><a href="https://kassapoglou.github.io/main/course-list-all.html">ΜΑΘΗΜΑΤΑ</a></li>
+						<li> <a href="https://kassapoglou.github.io/jakarta/jakartaee.html">JAKARTA EE</a></li>
+					</ol>
+				</div>
+			</nav>
+			<!-- two columns -->
+			<div id="two-columns" class="container">
+				<div class="row">
+					<!-- content -->
+					<article id="content" class="col-xs-12 col-md-9">
+						<!-- content h1 -->
+						<h1 class="content-h1 fw-semi">Jakarta Ενότητα 1 - Getting Started With Servlets</h1>
+						<!-- view header -->
+						<header class="view-header row">
+							<div class="col-xs-12 col-sm-9 d-flex">
+								<div class="d-col">
+									<!-- post author -->
+									<div class="post-author">
+										<div class="alignleft no-shrink rounded-circle">
+											<a href="#"><img src="michail.jpg" class="rounded-circle" alt="image description"></a>
+										</div>
+										<div class="description-wrap">
+											<h2 class="author-heading"><a href="#">Εισηγητής</a></h2>
+											<h3 class="author-heading-subtitle text-uppercase">ΜΙΧΑΛΗΣ ΚΑΣΑΠΟΓΛΟΥ</h3>
+										</div>
+									</div>
+								</div>
+								<div class="d-col">
+									<!-- post author -->
+									<div class="post-author">
+										<div class="alignleft no-shrink icn-wrap">
+											<i class="far fa-bookmark"></i>
+										</div>
+										<div class="description-wrap">
+											<h2 class="author-heading"><a href="#">Κατηγορία</a></h2>
+											<h3 class="author-heading-subtitle text-uppercase">PROGRAMMING</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--<div class="col-xs-12 col-sm-3">
+								<div class="rating-holder">
+									<ul class="star-rating list-unstyled justify-end">
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+									</ul>
+									<strong class="element-block text-right subtitle fw-normal">(2 Reviews)</strong>
+								</div>
+							</div>-->
+						</header>
+						<div class="aligncenter content-aligncenter">
+							<img src="images/jakartaEE.jpeg" alt="image description">
+						</div>
+						<h3 class="content-h3">Jakarta Ενότητα 1 - Getting Started With Servlets</h3>
+						<p>Στο σημερινό δωρεάν μάθημα Java EE θα εγκαταστήσουμε όλα τα απαραίτητα εργαλεία που χρειαζόμαστε για να δημιουργήσουμε μια Java Enterprise εφαρμογή, και θα γράψουμε, και ταυτόχρονα θα αναλύσουμε, τον κώδικα που χρειάζεται για να τρέξει ένα Servlet.</p>
+
+						<p>Αν και μπορεί να ακούγεται παράξενο, τα Java Servlets ήταν η πρώτη προσπάθεια για να παράγουμε δυναμικές Java Web εφαρμογές. Η έκδοση 3.0 που ήταν μέρος του Java EE 6 έδωσε μια καινούργια νοοτροπία στο πως χτίζουμε μια Java Web εφαρμογή. </p>
+
+						<p>Αν και είναι κάπως δύσκολο να χτιστεί μια ολόκληρη ιστοσελίδα μόνο με Servlets, η χρήση τους στο MVC μοντέλο ήταν πολύ συχνή αφού είχαν και έχουν τον ρόλο του Controller.</p>
+
+						<p>Βασικά ακόμα και σήμερα τα Servlets είναι η βάση για όλες τις Java EE εφαρμογές. Web frameworks όπως JSP (Java Server Pages) και JSF (Java Server Faces) στην πραγματικότητα γίνονται compile σε Java Servlets για να μπορούν να εκτελεστούν σωστά στο Web Container του Application Server. Δεν θα εμβαθύνουμε πολύ στα Servlets αν και είναι πολύ χρήσιμα, στα σίγουρα όμως θα μάθουμε αρκετά πράγματα έτσι ώστε να μπορούμε αργότερα να τα χρησιμοποιήσουμε σαν Clients στις Enterprise Εφαρμογές που θα δημιουργήσουμε.</p>
+
+						<p>Τι είναι λοιπόν τα Servlets? Τα Servlets είναι Java κλάσεις που ακολουθούν τους κανόνες του Java Servlet API και έχουν την ικανότητα να απαντούν σε web αιτήματα. Αν και θεωρητικά μπορούν να ανταποκριθούν σε οποιοδήποτε είδος αιτήματος, κυρίως χρησιμοποιούνται για να απαντούν σε http αιτήματα.</p>
+
+						<p>Για να μπορεί να εκτελεστεί σωστά ένα Servlet πρέπει να γίνει deploy σε ένα Web container δηλαδή σε κάποιον application server όπως Tomcat, Payara, Wildfly κτλ. Επειδή κάθε Servlet κληρονομεί από το Servlet API, έχει την δυνατότητα παρέχει συγκεκριμένα αντικείμενα που προσθέτουν δυνατότητες στην λειτουργία του. Μερικά από τα αντικείμενα είναι το request, το response, το pageContext και άλλα. Εμείς απλά θα μείνουμε στα request και response αντικείμενα αφού με αυτά μπορούμε να εκτελέσουμε αρκετές από τις λειτουργίες που θέλουμε. </p>
+
+						<p>Όπως είπαμε και στην αρχή της ενότητας, τα Servlets είναι στην πραγματικότητα java classes και αυτό σημαίνει ότι μπορούμε να αναπτύξουμε ότι κώδικα Java θέλουμε μέσα σε αυτά. Άλλωστε για αυτό και συνηθίζουμε να τα χρησιμοποιούμε σαν clients σε απλά Web παραδείγματα για να δείξουμε την λειτουργία μιας απλής εφαρμογής.</p>
+
+						<p>Ιστορικά, το Servlet 3.1 specification ήταν μέρος του Java EE 7 που ακόμα χρησιμοποιούμε και θα γράφουμε κώδικα σε αυτό για πολύ καιρό ακόμα. Μέσα σε αυτήν την έκδοση είδαμε καινούργια χαρακτηριστικά στα Servlets όπως υποστήριξη του HTTP 1.1, non-blocking ασύγχρονο I/O και πολλά άλλα. Το καινούργιο Servlet 4.0 specification, το οποίο είναι μέρος του Java EE 8 φέρνει μαζί του ακόμα καλύτερες βελτιώσεις όπως request/response mutliplexing, server push, stream prioritization και άλλα. Κάποιες από αυτές τις βελτιώσεις συμβαίνουν χωρίς εμείς να μπορούμε να επέμβουμε ενώ κάποιες άλλες όπως το server push δίνουν στον προγραμματιστή επιπλέον δυνατότητες να πειραματιστεί.</p>
+
+						<p>Πριν ξεκινήσουμε να γράφουμε τον πρώτο μας κώδικα, πρέπει να εγκαταστήσουμε ένα IDE για να γράφουμε τον κώδικα μας και έναν application server που να υποστηρίζει Java EE 8. Για το IDE η δική μου επιλογή είναι το Apache NetBeans. Απλά κατεβάστε από εδώ  <a href="https://netbeans.apache.org/download/index.html">(https://netbeans.apache.org/download/index.html)</a> την πιο τελευταία έκδοση του Apache Netbeans.</p>
+
+						<img src="unit1/unit1-pic1.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+						<p></p>
+						
+						<p>Τώρα όσο αφορά τον Application Server θα επιλέξω τον Wildfly. Είναι ένας από τους καλύτερους και ποιο σταθερούς Application Server για Java Enterprise εφαρμογές. Αντί όμως να τον εγκαταστήσουμε και να φορτώνουμε (deploy) τις εφαρμογές μας σε αυτόν, η καινούργια προσέγγιση που ακολουθούμε στον Java Enterprise προγραμματισμό είναι ο Application Server να είναι ενσωματωμένος με την εφαρμογή. Αυτό το πετυχαίνουμε με την τροποποίηση του pom.xml αρχείου του maven project μας. Ας δούμε τα βήματα ένα προς ένα πως να δημιουργήσουμε το πρώτο μας project που θα μπορείτε να το χρησιμοποιήσετε και σαν template για τα υπόλοιπα project που θα δημιουργήσουμε μέσα από τα δωρεάν μαθήματα Java EE.</p>
+
+						<p>Πηγαίνουμε στο <a href="https://start.microprofile.io/">https://start.microprofile.io/</a> και για groupid βάζουμε com.mycompany, στο artifactid γράφουμε JavaEE8BasicServlet, στο MicroProfile Runtime επιλέγουμε Wildfly και για Java SE Version επιλέγουμε Java 11. Στο Microprofile Version θα εμφανιστεί αυτόματα η επιλογή MP3.3. Πατήστε το κουμπί DOWNLOAD για να κατεβάσετε το maven project.</p>
+						
+						<img src="unit1/unit1-pic2.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+						<p></p>
+
+						<p>Πριν προχωρήσουμε στα επόμενα βήματα, απλά θα ήθελα να σας υπενθυμίσω ότι για μπορούμε να τρέξουμε την Java EE εφαρμογή μας, χρειάζεται να έχουμε εγκαταστήσει την Java 11 και το apache maven.</p>
+
+						<p>Αφού κατεβάσετε το zip αρχείο, μπορείτε να το αποσυμπιέσετε σε όποιο φάκελο του σκληρού σας δίσκου θέλετε. Όταν ολοκληρώσετε αυτή την διαδικασία μπορείτε να το ανοίξετε με το Apache Netbeans.</p>
+
+						<p>Το project που θα έχει δημιουργηθεί έχει κάποια έξτρα αρχεία που δεν χρειαζόμαστε. Επίσης πρέπει να κάνουμε κάποιες αλλαγές στο pom.xml. Πάμε λοιπόν να δούμε τι αλλαγές χρειάζεται να κάνουμε.</p>
+
+						<p>Όπως είπαμε στην αρχή της ενότητας, χρειαζόμαστε έναν embedded application server. Πάμε λοιπόν στο web site του Wildfly application server (wildfly.org) και κάνετε κλικ επάνω στην ενότητα Wildfly Bootable JAR.</p>
+
+						<img src="unit1/unit1-pic3.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+						<p></p>
+
+						<p> Το συγκεκριμένο άρθρο μας δίνει πληροφορίες για το πως να αλλάξουμε το pom.xml αρχείο για να μπορεί να τρέξει το project μας με τον wildfly ενσωματωμένο. To αποτέλεσμα, αφού κάνουμε build το project μας με το maven, είναι να δημιουργηθεί ένα jar αρχείο που αν το εκτελέσετε θα ξεκινήσει έναν wildfly και μετά θα φορτώσει το project σας.</p>
+
+						<p>Αν δεν θέλετε να διαβάσετε όλο το άρθρο, ή βρίσκεται κάπως δύσκολο να καταλάβετε όλες τις αλλαγές, σας δίνω εδώ πως θα μοιάζει η τελική μορφή του pom.xml μετά τις τροποποιήσεις. Μπορείτε απλά να το αντιγράψετε στο pom.xml του project που μόλις δημιουργήσαμε.</p>
+
+						<p><strong>pom.xml</strong></p>
+<pre class="prettyprint"><xmp>
+	<?xml version="1.0" encoding="UTF-8"?>
+	<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	  <modelVersion>4.0.0</modelVersion>
+	  <groupId>com.mycompany</groupId>
+	  <artifactId>JavaEE8BasicServlet</artifactId>
+	  <version>1.0-SNAPSHOT</version>
+	  <packaging>war</packaging>
+	  <properties>
+		<maven.compiler.target>11</maven.compiler.target>
+		<version.wildfly>23.0.0.Final</version.wildfly>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+		<maven.compiler.source>11</maven.compiler.source>
+		<final.name>JavaEE8BasicServlet</final.name>
+	  </properties>
+	  <dependencies>
+		<dependency>
+		  <groupId>jakarta.platform</groupId>
+		  <artifactId>jakarta.jakartaee-api</artifactId>
+		  <scope>provided</scope>
+		  <version>8.0.0</version>
+	  </dependency>
+	  </dependencies>
+	  <build>
+		<finalName>JavaEE8BasicServlet</finalName>
+	  </build>
+	 <profiles>
+		<profile>
+		  <id>wildfly</id>
+		  <activation>
+			<activeByDefault>true</activeByDefault>
+		  </activation>
+		  <build>
+			<plugins>
+			  <plugin>
+				<groupId>org.wildfly.plugins</groupId>
+				<artifactId>wildfly-jar-maven-plugin</artifactId>
+				<version>4.0.2.Final</version>
+				<executions>
+				  <execution>
+					<goals>
+					  <goal>package</goal>
+					</goals>
+				  </execution>
+				</executions>
+				<configuration>
+				  <feature-pack-location>wildfly@maven(org.jboss.universe:community-universe)#${version.wildfly}</feature-pack-location>
+				  <layers>
+					<!--<layer>jaxrs-server</layer>-->
+	
+				  </layers>
+				</configuration>
+			  </plugin>
+			</plugins>
+		  </build>
+		</profile>
+	  </profiles>
+	</project>
+</xmp>
+</pre>
+
+<p>Διαγράφουμε λοιπόν το Index.html από το Web Pages. Από το πακέτο com.mycompany.JavaEE8BasicServlet στο Source Packages διαγράφετε τα δύο java αρχεία. Τέλος, μέσα στο META-INF, του φακέλου Other Resources, διαγράφουμε το microprofile-config.properties. </p>
+
+<p>Μην σας φαίνονται πολλές οι αλλαγές. Στην πραγματικότητα διαγράψαμε ότι υπήρχε εκεί σαν κώδικας γιατί θα δημιουργήσουμε τον δικό μας κώδικα από το μηδέν. </p>
+
+<p>Μετά από όλες αυτές τις αλλαγές η τελική δομή του project θα είναι παρόμοια με αυτή της παρακάτω εικόνας:</p>
+
+<img src="unit1/unit1-pic4.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+						<p></p>
+
+
+<p>Πριν γράψουμε τον πρώτο μας κώδικα, ας κάνουμε compile το project μας. Κάνουμε λοιπόν δεξί κλικ επάνω στο project και επιλέγουμε Clean and Build. Όλες οι απαραίτητες βιβλιοθήκες του Jakarta EE8 θα κατέβουν στον υπολογιστή σας και το project θα έχει δημιουργηθεί σωστά.</p>
+
+<p>Τώρα που έχουμε την βασική δομή της εφαρμογής μας δεν έχουμε παρά να δημιουργήσουμε το πρώτο μας Servlet. Κάνουμε δεξί κλικ επάνω στο πακέτο, επιλέγουμε New και μετά Servlet.</p>
+
+<img src="unit1/unit1-pic5.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+						<p></p>
+
+<p>Στο παράθυρο που εμφανίζεται γράφουμε SimpleServlet για Class Name. Αφήνουμε τις άλλες επιλογές όπως έχουν και πατάμε Next.</p>
+
+<img src="unit1/unit1-pic6.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+						<p></p>
+
+<p>Στο τελευταίο παράθυρο απλά πατάτε Finish. Στην καινούργια έκδοση των Servlets δεν χρειάζεται να δημιουργήσουμε ένα web.xml. Τώρα μπορούμε να καθορίσουμε πολλά από τα properties των Servlets με την χρήση των annotations.</p>
+
+<img src="unit1/unit1-pic7.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+						<p></p>
+
+<p>To Servlet μας είναι έτοιμο. Τώρα μπορούμε να γράψουμε ένα απλό μήνυμα που θα εμφανίζεται στον Browser. Υπάρχουν όμως κάποια μικρά θεωρητικά στοιχεία που πρέπει να αναλύσουμε για να κατανοήσουμε καλύτερα την λειτουργία του Servlet πριν προχωρήσουμε στην εγγραφή και εκτέλεση ενός Servlet κώδικα.</p>
+
+<p>Αν κοιτάξουμε λίγο τον κώδικα του Servlet που δημιουργήσαμε, θα δούμε πως έχουν δημιουργηθεί δύο μέθοδοι : doGet και doPost που βασικά ανταποκρίνονται σε GET και POST calls που δέχονται δια μέσου του HTTP πρωτοκόλλου. Το Servlet μας απόκτησε αυτή την ικανότητα λόγω της κληρονομικότητας από την κλάση HttpServlet (η πρώτη γραμμή της κλάσης μας είναι public class SimpleServlet extends HttpServlet) που και αυτό με την σειρά του κληρονομεί από μια πιο γενική κλάση που ονομάζεται GenericServlet. Το αποτέλεσμα αυτής της κληρονομικότητας είναι ότι το Servlet μας μπορεί να διαχειριστεί HTTP καλέσματα και μπορεί ταυτόχρονα να περιέχει Java κώδικα.</p>
+
+<p>Τέλος αν προσέξουμε τις μεθόδους, θα παρατηρήσουμε ότι οι παράμετροι που περνάμε είναι είδος HttpServletRequest και HttpServletResponse. Το HttpServletResponse αντικείμενο προετοιμάζει την απάντηση έτσι ώστε να την επιστρέψει στον browser.</p>
+
+<p>Οι HttpServlet μέθοδοι που έχουμε στην διάθεση μας γενικότερα είναι οι εξής:</p>
+
+<img src="unit1/unit1-pic8.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+						<p></p>
+
+
+<p>Ας αλλάξουμε τον κώδικα μέσα στην processRequest μέθοδο για να μας δείξει ένα απλό μήνυμα στον browser.</p>
+
+<img src="unit1/unit1-pic9.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+						<p></p>
+
+<img src="unit1/unit1-pic10.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+						<p></p>
+
+
+<p>Όταν τελειώσετε με τα παραπάνω βήματα, θα δείτε ότι πάνω από το όνομα της κλάσης υπάρχει ένα annotation με το όνομα @WebServlet. Θα βασιστούμε στην λειτουργία του για να εκτελεστεί σωστά η εφαρμογή μας. Αυτό που στην πραγματικότητα κάνει το συγκεκριμένο annotation είναι να προσφέρει μια αντιστοιχία του Servlet και του URL στο οποίο ακούει χωρίς να χρειάζεται το web.xml. Υπάρχουν αρκετά στοιχεία (elements) που μπορούμε να προσθέσουμε αμέσως μετά το @WebServlet όπως δείχνει ο πιο κάτω πίνακας:</p>
+
+
+<img src="unit1/unit1-pic11.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+						<p></p>
+
+
+<p>Το @WebServlet annotation αντιστοιχεί την κλάση SimpleServlet στο URL pattern /SimpleServlet. Επίσης ονομάζουμε το Servlet σαν SimpleServlet.</p>
+
+<p>Είναι χρήσιμο να γράφουμε Servlets με αυτό τον τρόπο; Εξαρτάται, γιατί το configuration τώρα είναι μέσα στον κώδικα που σημαίνει ότι αν θέλουμε να αλλάξουμε κάποιο element ή κάποιο annotation θα πρέπει να γίνει recompile το project μας. Για παράδειγμα, σκεφτείτε ότι ενώ έχει γίνει deploy το project θέλουμε να αλλάξουμε το URL patterns. Επίσης θα πρέπει να πηγαίνουμε σε μεμονωμένα αρχεία και να κάνουμε όλες τις αλλαγές που χρειάζονται σε κάθε κλάση ξεχωριστά.</p>
+
+<p>Τώρα για να ξεκινήσουμε το project μας, πρέπει πρώτα να εκτελέσουμε την εντολή Clean and Build. Μετά πηγαίνουμε στο Navigator και αφού κάνουμε δεξί κλικ επάνω στο wildfly-jar run επιλέγουμε Execute Goal.</p>
+
+<img src="unit1/unit1-pic12.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+						<p></p>
+
+
+<p>Μετά από λίγα δευτερόλεπτα, θα έχει ξεκινήσει ο ενσωματωμένος wildfly. Τώρα μπορούμε να δούμε το αποτέλεσμα του Servlet στον browser στην εξής διεύθυνση: <strong>http://127.0.0.1:8080/SimpleServlet</strong> </p>
+
+
+<img src="unit1/unit1-pic13.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+						<p></p>
+
+
+<p>Το SimpleServlet είναι το urlPatterns που ορίσαμε στο Servlet. Μπορείτε να κρατήσετε το name το ίδιο και απλά να αλλάξετε το όνομα του urlPatterns. </p>
+
+
+						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
+						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
+						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
+						<p>Θα συνεχίζετε να χτίζετε τις γνώσεις σας προχωρώντας  στην δημιουργία functions και να αλληλεπιδράτε με το πρόγραμμα σας όπως να ζητάτε από τον τελικό χρήστη να εισάγει δεδομένα κατά την εκτέλεση της εφαρμογής.</p>
+						<p>Κλάσεις και κληρονομικότητα θα σας απασχολήσουν για αρκετές ενότητες καλύπτοντας όλη την βασική θεωρία του αντικειμενοστραφή προγραμματισμού. Φυσικά κάθε κώδικας χρειάζεται να προστατευτεί από τυχόν λάθη στην εισαγωγή δεδομένων, όποτε θα μάθετε πως να διαχειρίζεστε τα ποιο κοινά λάθη που μπορεί να τύχουν καθώς η εφαρμογή σας εκτελείτε.</p>
+						<p>Στο δεύτερο μέρος των δωρεάν μαθημάτων θα μάθετε να γράφετε multi-threading και multi-processing κώδικα και να αναγνωρίζετε τις διάφορες τους. Επίσης θα εξοικειωθείτε με την έννοια του testing και ποιες βιβλιοθήκες να χρησιμοποιήσετε για να δοκιμάσετε τον κώδικα σας. Τέλος θα μάθετε κάποιες προχωρημένες έννοιες όπως Generators και Iterators, lambda expressions, και web scraping.</p>-->
+						<!--<ul class="listDefault list-unstyled">
+							<li>Thomas Edison may have been behind the invention.</li>
+							<li>Edison worked alongside partners, both financial and commercial, to get his best inventions off the ground,</li>
+							<li>Battling challenging cost targets and the need to build.</li>
+						</ul>
+						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
+						
+						<!-- sectionRow -->
+						<section class="sectionRow">
+							
+							<!-- sectionRowPanelGroup -->
+						
+							
+							
+						</section>
+
+						
+						<!-- sectionRow -->
+					
+						<!-- bookmarkFoot -->
+						<div class="bookmarkFoot">
+							<div class="bookmarkCol">
+								<ul class="socail-networks list-unstyled">
+									<li><a href="https://www.facebook.com/kassapoglou" class="facebook"><span class="fab fa-facebook-f"></span></a></li>
+									<li><a href="https://www.linkedin.com/groups/4390739/" class="linkedin"><span class="fab fa-linkedin"></span></a></li>
+									
+								</ul>
+							</div>
+						
+						</div>
+						<h2>ΕΙΣΗΓΗΤΗΣ</h2>
+						<!-- instructorInfoBox -->
+						<div class="instructorInfoBox">
+							<div class="alignleft">
+								<a href="#"><img src="michail.jpg" alt="Merry Jhonson"></a>
+							</div>
+							<div class="description-wrap">
+								<h3 class="fw-normal"><a href="#"></a></h3>
+								<h4 class="fw-normal">Μιχάλης Κασάπογλου</h4>
+								<p>Ο Μιχάλης Κασάπογλου, είναι ένας από τους πιο έμπειρους τεχνικούς εκπαιδευτές στον χώρο του προγραμματισμού με πάνω από 20 χρόνια εμπειρία. Έχει εργαστεί σαν IT Operations Manager, Senior Programmer, και Training Team Leader ενώ κατέχει και αρκετές πιστοποιήσεις που καλύπτουν ένα μεγάλο φάσμα τεχνολογιών στο προγραμματισμό, σε βάσεις δεδομένων και cloud. Στον ελεύθερο του χρόνο διατηρεί ένα τεχνολογικό blog στο οποίο θα βρείτε αρκετά δωρεάν μαθήματα προγραμματισμού για αρχάριους.
+									</p>
+								<!--<a href="#" class="btn btn-default font-lato fw-semi text-uppercase">View Profile</a>-->
+							</div>
+						</div>
+					
+						<!-- reviewsList -->
+					
+						<!-- reviesSubmissionForm -->
+					
+					</article>
+					<!-- sidebar -->
+					<aside class="col-xs-12 col-md-3" id="sidebar">
+						<!-- widget course select -->
+						<section class="widget widget_box widget_course_select">
+							<header class="widgetHead text-center bg-theme">
+								<h3 class="text-uppercase">ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ JAKARTA EE</h3>
+							</header>
+							<strong class="price element-block font-lato" data-label="price:">FREE</strong>
+							<ul class="list-unstyled font-lato">
+								<!--<li><i class="far fa-user icn no-shrink"></i> 199 Students</li>-->
+								<!--<li><i class="far fa-clock icn no-shrink"></i> ΔΙΑΡΚΕΙΑ: 30 ΗΜΕΡΕΣ</li>-->
+								<!--<li><i class="fas fa-bullhorn icn no-shrink"></i> ΑΡΙΘΜΟΣ ΜΑΘΗΜΑΤΩΝ: 50</li>-->
+								<!--<li><i class="far fa-play-circle icn no-shrink"></i> Video: 12 hours</li>-->
+								<!--<li><i class="far fa-address-card icn no-shrink"></i> Certificate of Completion</li>-->
+							</ul>
+						</section>
+
+						<div class="one-third color-3 animate-box">
+							<span class="icon"><i class="icon-paypal"></i></span>
+							<div class="desc">
+								<h3>Γίνε Χορηγός στη Γνώση</h3>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="GQD77W6K672RA" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_GR/i/scr/pixel.gif" width="1" height="1" />
+</form></a></p>
+							</div>
+						</div>
+						<!-- widget categories -->
+						<section class="widget widget_categories">
+							<h3>ΚΑΤΗΓΟΡΙΕΣ ΜΑΘΗΜΑΤΩΝ</h3>
+							<ul class="list-unstyled text-capitalize font-lato">
+								<li class="cat-item cat-item-1"><a href="#">Programming</a></li>
+								<li class="cat-item active cat-item-2"><a href="#">DevOps</a></li>
+								<li class="cat-item cat-item-3"><a href="#">Web Design</a></li>
+								<li class="cat-item cat-item-4"><a href="#">Tools</a></li>
+								<li class="cat-item cat-item-5"><a href="#">Mobile</a></li>
+								<li class="cat-item cat-item-6"><a href="#">Databases</a></li>
+								<!--<li class="cat-item cat-item-7"><a href="#">IT &amp; Software</a></li>-->
+							</ul>
+						</section>
+						<!-- widget intro -->
+					<!--	<section class="widget widget_intro">
+							<h3>Course Intro</h3>
+							<div class="aligncenter overlay">
+								<a href="http://www.youtube.com/embed/9bZkp7q19f0?autoplay=1" class="btn-play far fa-play-circle lightbox fancybox.iframe"></a>
+								<img src="http://placehold.it/260x220" alt="image description">
+							</div>
+						</section>-->
+						<!-- widget popular posts -->
+						<section class="widget widget_popular_posts">
+							<h3>ΔΗΜΟΦΙΛΗ ΣΕΜΙΝΑΡΙΑ</h3>
+							<!-- widget cources list -->
+							<ul class="widget-cources-list list-unstyled">
+								<li>
+									<a href="#">
+										<div class="alignleft">
+											<img src="jakarta.png" alt="image description">
+										</div>
+										<div class="description-wrap">
+											<h4>Εισαγωγή στην Java EE (Jakarta Enterprise)</h4>
+											<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="alignleft">
+											<img src="javascript.png" alt="Δωρεάν μαθήματα JavaScript">
+										</div>
+										<div class="description-wrap">
+											<h4>Web προγραμματισμός με JavaScript</h4>
+											<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="alignleft">
+											<img src="java.png" alt="Δωρεάν μαθήματα Java">
+										</div>
+										<div class="description-wrap">
+											<h4>Βασικές αρχές προγραμματισμού με Java</h4>
+											<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<div class="one-third color-3 animate-box">
+							<span class="icon"><i class="icon-paypal"></i></span>
+							<div class="desc">
+								<h3>Γίνε Χορηγός στη Γνώση</h3>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="GQD77W6K672RA" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_GR/i/scr/pixel.gif" width="1" height="1" />
+</form></a></p>
+							</div>
+						</div>
+						<!-- widget tags -->
+						<!--<nav class="widget widget_tags">
+							<h3>Tags</h3>-->
+							<!-- tag clouds -->
+							<!--<ul class="list-unstyled tag-clouds font-lato">
+								<li><a href="#">Future</a></li>
+								<li><a href="#">Science</a></li>
+								<li><a href="#">Coding</a></li>
+								<li><a href="#">Education</a></li>
+								<li><a href="#">Technology</a></li>
+							</ul>
+						</nav>-->
+					</aside>
+				</div>
+			</div>
+		</main>
+		<!-- footer area container -->
+				<!-- footer area container -->
+				<div class="footer-area bg-dark text-gray">
+					<!-- aside -->
+					<aside class="aside container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-3 col">
+								<div class="logo"><a href="home.html"><img src="images/logo.png" alt="studyLMS"></a></div>
+								<p>Ο πρωταρχικός λόγος που με ώθησε στο να δημιουργήσω αυτή την ιστοσελίδα και να προσφέρω δωρεάν μαθήματα είναι γιατί πιστεύω ότι η γνώση, σε οποιοδήποτε επίπεδο, πρέπει να μεταδίδεται για να έχει αξία.</p>
+								<a href="#" class="btn btn-default text-uppercase">ΞΕΚΙΝΗΣΤΕ ΤΑ ΜΑΘΗΜΑΤΑ</a>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 col hidden-xs">
+								<h3>ΔΗΜΟΦΙΛΗ ΜΑΘΗΜΑΤΑ</h3>
+								<!-- widget cources list -->
+								<ul class="widget-cources-list list-unstyled">
+									<li>
+										<a href="#">
+											<div class="alignleft">
+												<img src="python.png" alt="Δωρεάν μαθήματα Python">
+											</div>
+											<div class="description-wrap">
+												<h4>Μαθαίνω Python Προγραμματισμό</h4>
+												<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="alignleft">
+												<img src="javascript.png" alt="Δωρεάν μαθήματα JavaScript">
+											</div>
+											<div class="description-wrap">
+												<h4>Μαθαίνω JavaScript προγραμματισμό</h4>
+												<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="alignleft">
+												<img src="java.jpg" alt="Δωρεάν μαθήματα Java">
+											</div>
+											<div class="description-wrap">
+												<h4>Μαθαίνω Java Προγραμματισμό</h4>
+												<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<nav class="col-xs-12 col-sm-6 col-md-3 col">
+								<h3>ΣΥΝΔΕΣΜΟΙ</h3>
+								<!-- fooer navigation -->
+								<ul class="fooer-navigation list-unstyled">
+									<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
+									<li><a href="https://kassapoglou.github.io/main/training-events.html">ΠΡΟΓΡΑΜΜΑ</a></li>
+									<li><a href="https://kassapoglou.github.io/main/course-list-all.html">ΜΑΘΗΜΑΤΑ</li>
+									<li><a href="#">ΧΟΡΗΓΟΙ</a></li>
+									<li><a href="#">ΤΕΧΝΟΛΟΓΙΑ</a></li>
+									<li><a href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+									
+								</ul>
+							</nav>
+							<div class="col-xs-12 col-sm-6 col-md-3 col">
+								<h3>ΕΠΙΚΟΙΝΩΝΙΑ</h3>
+								<p>Μπορείτε να επικοινωνήσετε μαζί μου με τους εξής τρόπους:</p>
+								<!-- ft address -->
+								<address class="ft-address">
+									<dl>
+										<!--<dt><span class="fas fa-map-marker"><span class="sr-only">marker</span></span></dt>
+										<dd>Address: 9015 Sunset Boulevard United Kingdom</dd>-->
+										<dt><span class="fas fa-phone-square"><span class="sr-only">phone</span></span></dt>
+										<dd>Call: <a href="tel:+2156237532">+30 6976434707</a></dd>
+										<dt><span class="fas fa-envelope-square"><span class="sr-only">email</span></span></dt>
+										<dd>Email: <a href="mailto:michail.kassapoglou@gmail.com">michail.kassapoglou@gmail.com</a></dd>
+									</dl>
+								</address>
+							</div>
+						</div>
+					</aside>
+					<!-- page footer -->
+					<footer id="page-footer" class="font-lato">
+						<div class="container">
+							<div class="row holder">
+								<div class="col-xs-12 col-sm-push-6 col-sm-6">
+									<ul class="socail-networks list-unstyled">
+										<li><a href="#"><span class="fab fa-facebook"></span></a></li>
+										
+										<li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+									</ul>
+								</div>
+								<div class="col-xs-12 col-sm-pull-6 col-sm-6">
+									<!--<p><a href="#">Studylms</a> | &copy; 2018 <a href="#">DesignFalls</a>, All rights reserved</p>-->
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+				<!-- back top of the page -->
+				<span id="back-top" class="text-center fa fa-caret-up"></span>
+				<!-- loader of the page -->
+				<div id="loader" class="loader-holder">
+					<div class="block"><img src="images/svg/hearts.svg" width="100" alt="loader"></div>
+				</div>
+			</div>
+			<div class="popup-holder">
+				<div id="popup1" class="lightbox-demo">
+					<form action="#" class="user-log-form">
+						<h2>Login Form</h2>
+						<div class="form-group">
+							<input type="text" class="form-control element-block" placeholder="Username or email address *">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control element-block" placeholder="Password *">
+						</div>
+						<div class="btns-wrap">
+							<div class="wrap">
+								<label for="rem" class="custom-check-wrap fw-normal font-lato">
+									<input type="checkbox" id="rem" class="customFormReset">
+									<span class="fake-label element-block">Remember me</span>
+								</label>
+								<button type="submit" class="btn btn-theme btn-warning fw-bold font-lato text-uppercase">Login</button>
+							</div>
+							<div class="wrap text-right">
+								<p>
+									<a href="#" class="forget-link">Lost your Password?</a>
+								</p>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div id="popup2" class="lightbox-demo">
+					<form action="#" class="user-log-form">
+						<h2>Register Form</h2>
+						<div class="form-group">
+							<input type="email" class="form-control element-block" placeholder="Email address *">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control element-block" placeholder="Password *">
+						</div>
+						<div class="btns-wrap">
+							<div class="wrap">
+								<button type="submit" class="btn btn-theme btn-warning fw-bold font-lato text-uppercase">Register</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- include jQuery -->
+			<script src="js/jquery.js"></script>
+			<!-- include jQuery -->
+			<script src="js/plugins.js"></script>
+			<!-- include jQuery -->
+			<script src="js/jquery.main.js"></script>
+			<!-- include jQuery -->
+			<script type="text/javascript" src="js/init.js"></script>
+		</body>
+		</html>
