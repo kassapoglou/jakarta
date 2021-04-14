@@ -41,6 +41,7 @@
 
 		gtag('config', 'UA-150900548-1');
 	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
 </head>
 <body>
 	<!-- main container of all the page elements -->
@@ -123,7 +124,7 @@
 										</li>
 										<ul class="nav navbar-nav navbar-right main-navigation text-uppercase font-lato">
 											<li class="dropdown">
-												<a href="#">ΜΑΘΗΜΑΤΑ</a>
+												<a href="https://kassapoglou.github.io/main/course-list-all.html">ΜΑΘΗΜΑΤΑ</a>
 												<!-- <ul class="dropdown-menu"> -->
 													<!--<li><a href="home.html">Home</a></li>-->
 												<!--	<li><a href="home2.html">Home 2</a></li>
@@ -194,9 +195,9 @@
 				<div class="container">
 					<!-- breadcrumb -->
 					<ol class="breadcrumb">
-						<li><a href="https://kassapoglou.github.io/python/index.html">ΑΡΧΙΚΗ</a></li>
-						<li><a href="">ΣΕΜΙΝΑΡΙΑ</a></li>
-						<li class="active">JAKARTA EE</li>
+						<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
+						<li><a href="https://kassapoglou.github.io/main/course-list-all.html">ΜΑΘΗΜΑΤΑ</a></li>
+						<li> <a href="https://kassapoglou.github.io/jakarta/jakartaee.html">JAKARTA EE</a></li>
 					</ol>
 				</div>
 			</nav>
@@ -206,7 +207,7 @@
 					<!-- content -->
 					<article id="content" class="col-xs-12 col-md-9">
 						<!-- content h1 -->
-						<h1 class="content-h1 fw-semi">Εισαγωγή στην Java EE (Jakarta)</h1>
+						<h1 class="content-h1 fw-semi">Jakarta Ενότητα 2 - Using a Servlet to Display Dynamic Content</h1>
 						<!-- view header -->
 						<header class="view-header row">
 							<div class="col-xs-12 col-sm-9 d-flex">
@@ -251,46 +252,36 @@
 						<div class="aligncenter content-aligncenter">
 							<img src="images/jakartaEE.jpeg" alt="image description">
 						</div>
-						<h3 class="content-h3">ΠΕΡΙΓΡΑΦΗ ΣΕΜΙΝΑΡΙΟΥ</h3>
-						<p>Οι προγραμματιστές σήμερα αναγνωρίζουν όλο και περισσότερο
-							την ανάγκη να δημιουργηθούν καλύτερες εφαρμογές
-							που θα μπορούν να κατανεμηθούν σε πολλαπλούς 
-							Application Servers (distributed programming), 
-							θα έχουν μικρούς χρόνους εγγραφής και διαβάσματος 
-							δεδομένων (transactional programming) και θα είναι 
-							όσο το δυνατόν φορητές χωρίς να χρειαστεί να γίνει 
-							compilation ή να γίνουν σημαντικές αλλαγές στον κώδικα 
-							(portable application). Επιπλέον θα πρέπει όλες οι παραπάνω 
-							διαδικασίες να γίνουν με ταχύτητα, αξιοπιστία και ασφάλεια.</p>
-		<p>Ένα τέτοιο είδος προγραμματισμού δεν μπορεί να γίνει αποκλειστικά
-			με την Java Standard Edition. Θα χρειαστεί να προσθέσουμε
-			επιπλέον βιβλιοθήκες και δυνατότητες στην γλώσσα έτσι
-			ώστε να μπορεί να παρέχει έτοιμες υπηρεσίες για τις
-			ανάγκες ανάπτυξης μια τέτοιου είδους εφαρμογή. Αυτό
-			ακριβώς είναι το Jakarta EE – ένα σύνολο από standards
-			που έχουν αναπτυχθεί τα τελευταία 10 χρόνια που στο
-			σύνολο τους αντιπροσωπεύουνε ένα ολοκληρωμένο framework
-			με στόχο την ανάπτυξη Enterprise εφαρμογών που θα
-			περιέχουν την επιχειρησιακή λογική μιας εταιρείας. </p>
-			<p>Στον κόσμο της τεχνολογίας και της πληροφορίας,
-				οι επιχειρησιακές εφαρμογές πρέπει να σχεδιάζονται,
-				να κατασκευάζονται και να παράγονται με λιγότερα χρήματα,
-				με μεγαλύτερη ταχύτητα και με λιγότερους πόρους.</p>
-		<p>Με την πλατφόρμα Jakarta EE, η
-			ανάπτυξη επιχειρηματικών εφαρμογών Java δεν ήταν ποτέ
-			ευκολότερη ή ταχύτερη. Ο στόχος της πλατφόρμας Jakarta
-			EE είναι να παρέχει στους προγραμματιστές ένα ισχυρό
-			σύνολο βιβλιοθηκών και εργαλείων ενώ μειώνει τον χρόνο
-			ανάπτυξης και την πολυπλοκότητα στην ανάπτυξη της
-			εφαρμογής.</p>
-			<p>Στις ενότητες που ακολουθούν, θα αναλύσουμε
-				όλες τις τεχνολογίες από τις οποίες αποτελείται
-				η Java EE όπως το πως συνδεόμαστε σε μια βάση
-				και επικοινωνούμε με τα δεδομένα των πινάκων (JPA),
-				πως μπορούμε προσφέρουμε στον “έξω” κόσμο υπηρεσίες
-				με web services ( SOAP και REST), και πως να αναπτύξουμε
-				την λογική της εφαρμογής μας σε ειδικά κατασκευασμένες
-				δομές που ονομάζονται microservices. </p>
+						<h3 class="content-h3">Jakarta Ενότητα 2 - Using a Servlet to Display Dynamic Content</h3>
+						
+					<p>Στο σημερινό δωρεάν μάθημα Jakarta EE θα δούμε πως να δείχνουμε dynamic content με την χρήση ενός Servlet. Θα χρησιμοποιήσουμε το ίδιο απλό παράδειγμα που δημιουργήσαμε στην Ενότητα 1 με την προσθήκη κάποιου ελάχιστου κώδικα.</p>
+					
+					<p>Όπως ήδη έχουμε δει, ένα servlet είναι μια java κλάση, πού επειδή κληρονομεί από το httpservlet, έχει έξτρα ιδιότητες που του επιτρέπουν να διαχειρίζεται http αιτήματα.</p>
+
+					<p> Το γεγονός ότι έχουμε να κάνουμε με μια java κλάση μας δίνει το δικαίωμα να δημιουργήσουμε μεταβλητές και μεθόδους. Κάποιες από τις μεταβλητές θα χρησιμοποιηθούν τοπικά μέσα στις μεθόδους, και άλλες θα είναι σε επίπεδο κλάσης και οι τιμές του θα αλλάζουν σε σχέση με το input από τον χρήστη ή καποια πληροφορία που θα λάβουν από τον application server.</p>
+
+					<p>Στο παράδειγμα μας, θα δημιουργήσουμε μια μεταβλητή με το όνομα currentDataAndTime. Αφού έχουμε να κάνουμε με java κλάση, τότε λογικό είναι να θέλουμε να καλέσουμε την συγκεκριμένη μεταβλητή και να δούμε την τιμή που περιέχει. Μέχρι εδώ ακούγονται όλα λογικά, αλλά υπάρχει μια μικρή αλλά σημαντική λεπτομέρεια – η java κλάση (δηλαδή το servlet) τρέχει επάνω στον Application Server και αυτό κατά συνέπεια αυτόματα σημαίνει ότι υπάρχει πιθανότητα πολλαπλοί χρήστες να ζητήσουν ταυτόχρονα την ίδια πληροφορία δηλαδή να ζητήσουν την τιμή της μεταβλητής. Αυτό ίσως προκαλέσει πρόβλημα στην εφαρμογή σας. Ας το αναλύσουμε λίγο περισσότερο.</p>
+
+					<p>Τα Servlets είναι mutlithreaded από κατασκευή τους οπότε ταυτόχρονη χρήση του Servlet από πολλαπλούς χρήστες δεν είναι πρόβλημα. Όταν όμως κάποια μεταβλητή ορίζεται σε επίπεδο Servlet κλάσης (και όχι μέσα σε κάποια μέθοδο σαν τοπική μεταβλητή) τότε είναι ευθύνη του προγραμματιστή να προστατέψει την λειτουργία της και να βεβαιώσει το γεγονός ότι μόνο ένας χρήστης κάθε φορά μπορεί να αλλάξει την τιμή της μεταβλητής. Πως μπορούμε να λύσουμε αυτό το πρόβλημα? Εφαρμόζοντας απλή java λογική και χρησιμοποιώντας την λέξη κλειδί synchronize σε όσο το δυνατόν λιγότερες γραμμές κώδικα για να μην επιβαρύνουμε την απόδοση του συστήματος.</p>
+
+					<p>Μπορείτε να ανατρέξετε στην Ενότητα 1 και να αντιγράψετε το project που είχαμε δημιουργήσει. Η μόνη αλλαγή που έχουμε να κάνουμε τώρα στο Servlet είναι να προσθέσουμε μια καινούργια μεταβλητή είδος LocalDateTime και να την καλέσουμε μέσα στην processRequest μέθοδο προσθέτοντας το synchronized.</p>
+
+					<img src="unit2/unit2-pic1.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+						<p></p>
+						<img src="unit2/unit2-pic2.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+						<p></p>
+						
+					<p>Αν τρέξουμε τώρα το project μας θα δούμε το εξής αποτέλεσμα στον browser.</p>
+					
+					<img src="unit2/unit2-pic3.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+					<p></p>
+
+					<p>Ένας από τους λόγους που τα Servlet είναι διάσημα και ακόμα χρησιμοποιούνται σε εφαρμογές είναι γιατί μπορούν να εμφανίσουν το περιεχόμενο μεταβλητών που οι τιμές τους μεταβάλλονται. Το περιεχόμενο των μεταβλητών ίσως προέρχεται από τον server, την βάση ή από τον ίδιο τον χρήστη.</p>
+
+					<p>Στο παράδειγμα μας, το servlet παρουσιάζει στον browser την ώρα και την ημερομηνία την στιγμή που το κάλεσε ο χρήστης. Όταν ο χρήστης καλεί να δει το servlet, καλείται η doGet μέθοδο, η οποία με την σειρά της καλεί την processRequest, στην οποία έχουν περάσει τα request και response αντικείμενα. Η ημερομηνία και η ώρα, αφού το Servlet τα λάβει από τον server δημιουργώντας ένα LocalDateTime αντικείμενο, τα αναθέτει στην μεταβλητή currentDateAndTime. Κάθε φορά που κάποιος χρήστης καλεί το servlet, αυτό θα δείχνει την ημερομηνία και ώρα την στιγμή που έγινε το αίτημα. Φυσικά, δεν είναι ανάγκη να περιορίσουμε το παράδειγμα μας σε αντικείμενο είδος ημερομηνίας. Μπορείτε κάλλιστα να προσθέσετε μια int μεταβλητή που η τιμή της θα προέλθει από μια αριθμητική πράξη μέσα από τον Servlet ή δεδομένα που μπορεί να έχουν προέλθει από ένα αίτημα σε μια βάση δεδομένων.</p>
+
+					
+
 						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
 						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
 						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
@@ -303,82 +294,12 @@
 							<li>Battling challenging cost targets and the need to build.</li>
 						</ul>
 						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
-						<h2>ΕΝΟΤΗΤΕΣ</h2>
+						
 						<!-- sectionRow -->
 						<section class="sectionRow">
-							<h2 class="h6 text-uppercase fw-semi rowHeading">ΒΑΣΙΚΕΣ ΕΝΝΟΙΕΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ JAVA EE (JAKARTA)</h2>
+							
 							<!-- sectionRowPanelGroup -->
-							<div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist" aria-multiselectable="true">
-								<!-- panel -->
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingOne">
-										<h3 class="panel-title fw-normal">
-											<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="jakarta-unit1-getting-started-with-servlets.html" style="color:blue;">ΕΝΟΤΗΤΑ 1 JAKARTA EE - Getting Started With Servlets</a>
-												<span class="accOpenerCol">
-												
-												<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-												</span>
-												<!--<span class="accOpenerCol hd-phone">
-													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-													<time datetime="2011-01-12" class="timeCount">17 Min</time>
-												</span>-->
-											</a>
-										</h3>
-										
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h3 class="panel-title fw-normal">
-												<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="jakarta-unit2-using-a-servlet-to-display-dynamic-content.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 JAKARTA EE - Using a Servlet To Display Dynamic Content</a>
-													<span class="accOpenerCol">
-													
-													<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-													</span>
-													<!--<span class="accOpenerCol hd-phone">
-														<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-														<time datetime="2011-01-12" class="timeCount">17 Min</time>
-													</span>-->
-												</a>
-											</h3>
-											
-										</div>
-
-									
-									<!-- collapseOne -->
-								
-								</div>
-																	
-
-																						
-
-																									
-
-																									
-
-																											
-
-
-																												
-
-
-																														
-
-
-																															
-
-																																	
-
-
-
-								<!-- panel -->
-								
-								<!-- panel -->
-							
-								<!-- panel -->
-								
-								<!-- panel -->
-							
-							</div>
+						
 							
 							
 						</section>
@@ -390,14 +311,12 @@
 						<div class="bookmarkFoot">
 							<div class="bookmarkCol">
 								<ul class="socail-networks list-unstyled">
-									<li><a href="#" class="facebook"><span class="fab fa-facebook-f"></span></a></li>
-									<li><a href="#" class="linkedin"><span class="fab fa-linkedin"></span></a></li>
+									<li><a href="https://www.facebook.com/kassapoglou" class="facebook"><span class="fab fa-facebook-f"></span></a></li>
+									<li><a href="https://www.linkedin.com/groups/4390739/" class="linkedin"><span class="fab fa-linkedin"></span></a></li>
 									
 								</ul>
 							</div>
-							<div class="bookmarkCol text-right">
-								<a href="#" class="btn btn-theme btn-warning text-uppercase fw-bold">Bookmark this course</a>
-							</div>
+						
 						</div>
 						<h2>ΕΙΣΗΓΗΤΗΣ</h2>
 						<!-- instructorInfoBox -->
@@ -424,7 +343,7 @@
 						<!-- widget course select -->
 						<section class="widget widget_box widget_course_select">
 							<header class="widgetHead text-center bg-theme">
-								<h3 class="text-uppercase">ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ JAVA EE</h3>
+								<h3 class="text-uppercase">ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ JAKARTA EE</h3>
 							</header>
 							<strong class="price element-block font-lato" data-label="price:">FREE</strong>
 							<ul class="list-unstyled font-lato">
@@ -593,7 +512,7 @@
 								<ul class="fooer-navigation list-unstyled">
 									<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
 									<li><a href="https://kassapoglou.github.io/main/training-events.html">ΠΡΟΓΡΑΜΜΑ</a></li>
-									<li><a href="#">ΜΑΘΗΜΑΤΑ</li>
+									<li><a href="https://kassapoglou.github.io/main/course-list-all.html">ΜΑΘΗΜΑΤΑ</li>
 									<li><a href="#">ΧΟΡΗΓΟΙ</a></li>
 									<li><a href="#">ΤΕΧΝΟΛΟΓΙΑ</a></li>
 									<li><a href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
