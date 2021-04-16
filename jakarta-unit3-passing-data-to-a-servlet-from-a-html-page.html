@@ -31,6 +31,7 @@
 	<!-- include the site responsive stylesheet -->
 	<link rel="stylesheet" href="css/responsive.css">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 
@@ -41,6 +42,7 @@
 
 		gtag('config', 'UA-150900548-1');
 	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
 </head>
 <body>
 	<!-- main container of all the page elements -->
@@ -123,7 +125,7 @@
 										</li>
 										<ul class="nav navbar-nav navbar-right main-navigation text-uppercase font-lato">
 											<li class="dropdown">
-												<a href="#">ΜΑΘΗΜΑΤΑ</a>
+												<a href="https://kassapoglou.github.io/main/course-list-all.html">ΜΑΘΗΜΑΤΑ</a>
 												<!-- <ul class="dropdown-menu"> -->
 													<!--<li><a href="home.html">Home</a></li>-->
 												<!--	<li><a href="home2.html">Home 2</a></li>
@@ -194,9 +196,9 @@
 				<div class="container">
 					<!-- breadcrumb -->
 					<ol class="breadcrumb">
-						<li><a href="https://kassapoglou.github.io/python/index.html">ΑΡΧΙΚΗ</a></li>
-						<li><a href="">ΣΕΜΙΝΑΡΙΑ</a></li>
-						<li class="active">JAKARTA EE</li>
+						<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
+						<li><a href="https://kassapoglou.github.io/main/course-list-all.html">ΜΑΘΗΜΑΤΑ</a></li>
+						<li> <a href="https://kassapoglou.github.io/jakarta/jakartaee.html">JAKARTA EE</a></li>
 					</ol>
 				</div>
 			</nav>
@@ -206,7 +208,7 @@
 					<!-- content -->
 					<article id="content" class="col-xs-12 col-md-9">
 						<!-- content h1 -->
-						<h1 class="content-h1 fw-semi">Εισαγωγή στην Java EE (Jakarta)</h1>
+						<h1 class="content-h1 fw-semi">Jakarta Ενότητα 3 - Passing Data to a Servlet From a HTML Page</h1>
 						<!-- view header -->
 						<header class="view-header row">
 							<div class="col-xs-12 col-sm-9 d-flex">
@@ -251,46 +253,70 @@
 						<div class="aligncenter content-aligncenter">
 							<img src="images/jakartaEE.jpeg" alt="image description">
 						</div>
-						<h3 class="content-h3">ΠΕΡΙΓΡΑΦΗ ΣΕΜΙΝΑΡΙΟΥ</h3>
-						<p>Οι προγραμματιστές σήμερα αναγνωρίζουν όλο και περισσότερο
-							την ανάγκη να δημιουργηθούν καλύτερες εφαρμογές
-							που θα μπορούν να κατανεμηθούν σε πολλαπλούς 
-							Application Servers (distributed programming), 
-							θα έχουν μικρούς χρόνους εγγραφής και διαβάσματος 
-							δεδομένων (transactional programming) και θα είναι 
-							όσο το δυνατόν φορητές χωρίς να χρειαστεί να γίνει 
-							compilation ή να γίνουν σημαντικές αλλαγές στον κώδικα 
-							(portable application). Επιπλέον θα πρέπει όλες οι παραπάνω 
-							διαδικασίες να γίνουν με ταχύτητα, αξιοπιστία και ασφάλεια.</p>
-		<p>Ένα τέτοιο είδος προγραμματισμού δεν μπορεί να γίνει αποκλειστικά
-			με την Java Standard Edition. Θα χρειαστεί να προσθέσουμε
-			επιπλέον βιβλιοθήκες και δυνατότητες στην γλώσσα έτσι
-			ώστε να μπορεί να παρέχει έτοιμες υπηρεσίες για τις
-			ανάγκες ανάπτυξης μια τέτοιου είδους εφαρμογή. Αυτό
-			ακριβώς είναι το Jakarta EE – ένα σύνολο από standards
-			που έχουν αναπτυχθεί τα τελευταία 10 χρόνια που στο
-			σύνολο τους αντιπροσωπεύουνε ένα ολοκληρωμένο framework
-			με στόχο την ανάπτυξη Enterprise εφαρμογών που θα
-			περιέχουν την επιχειρησιακή λογική μιας εταιρείας. </p>
-			<p>Στον κόσμο της τεχνολογίας και της πληροφορίας,
-				οι επιχειρησιακές εφαρμογές πρέπει να σχεδιάζονται,
-				να κατασκευάζονται και να παράγονται με λιγότερα χρήματα,
-				με μεγαλύτερη ταχύτητα και με λιγότερους πόρους.</p>
-		<p>Με την πλατφόρμα Jakarta EE, η
-			ανάπτυξη επιχειρηματικών εφαρμογών Java δεν ήταν ποτέ
-			ευκολότερη ή ταχύτερη. Ο στόχος της πλατφόρμας Jakarta
-			EE είναι να παρέχει στους προγραμματιστές ένα ισχυρό
-			σύνολο βιβλιοθηκών και εργαλείων ενώ μειώνει τον χρόνο
-			ανάπτυξης και την πολυπλοκότητα στην ανάπτυξη της
-			εφαρμογής.</p>
-			<p>Στις ενότητες που ακολουθούν, θα αναλύσουμε
-				όλες τις τεχνολογίες από τις οποίες αποτελείται
-				η Java EE όπως το πως συνδεόμαστε σε μια βάση
-				και επικοινωνούμε με τα δεδομένα των πινάκων (JPA),
-				πως μπορούμε προσφέρουμε στον “έξω” κόσμο υπηρεσίες
-				με web services ( SOAP και REST), και πως να αναπτύξουμε
-				την λογική της εφαρμογής μας σε ειδικά κατασκευασμένες
-				δομές που ονομάζονται microservices. </p>
+						<h3 class="content-h3">Jakarta Ενότητα 3 - Passing Data to a Servlet From a HTML Page</h3>
+						
+<p>Στο σημερινό δωρεάν μάθημα Jakarta EE θα μάθουμε πως να περνάμε στοιχεία από ένα HTML page σε ένα Servlet.</p>
+
+<p>Μέχρι τώρα έχουμε δει το Servlet να συμπεριφέρεται σαν Web Client (μηνύματα στον browser). Όμως φαντάζομαι ότι ήδη έχετε παρατηρήσει ότι είναι κάπως κουραστικό στο να παρουσιάζουμε μηνύματα στο browser δια μέσω ενός servlet, αφού κάθε ένα HTML tag πρέπει να οριστεί ξεχωριστά μέσα σε μια println( ) μέθοδο. Για την παρουσίαση ενός απλού μηνύματος η πιο πάνω διαδικασία είναι αποδεκτή. Αλλά γίνεται κάπως χρονοβόρα όταν θέλουμε να δημιουργήσουμε μια input form μέσα από την οποία ο χρήστης μπορεί να καταχωρήσει τα στοιχεία του και να αποθηκευτούν στην εφαρμογή μας. Για αυτό το λόγο δεν θα δούμε το Servlet σε production εφαρμογές να είναι clients.</p>
+
+<p>Συνήθως το Servlet περιορίζεται στο να παίζει το ρόλο του controller και να περνάει στην εφαρμογή πληροφορίες που έχει λάβει από το Web Homepage που μπορεί να είναι ένα HTML αρχείο ή ένα JSP αρχείο. Οπότε γεννιέται το εξής ερώτημα: Πως μπορεί ένα servlet να καταλάβει τι τιμές έχουν εισαχθεί σε μια html σελίδα?</p>
+
+<p>Ο καλύτερος τρόπος για να απαντήσουμε αυτή την ερώτηση είναι να δούμε ένα παράδειγμα. Στην πιο κάτω εφαρμογή, ζητάμε από τον χρήστη να εισάγει από ποια πόλη πετάνε, που θέλουν να πάνε και ποια ημέρα για να μπορέσει η εφαρμογή να κάνει κράτηση ενός θεωρητικού αεροπορικού εισιτηρίου. Την φόρμα εισαγωγής των πιο πάνω στοιχείων τα ζητάμε μέσα από μια html σελίδα με το όνομα index.html.</p>
+
+<p>Για αρχή, χρειάζεται να δημιουργήσουμε ένα Jakarta EE project στο NetBeans. Μπορείτε απλά να αντιγράψετε το project που είχαμε δημιουργήσει στην ενότητα 2 και να το αλλάξετε. Μετά πρέπει να δημιουργήσουμε ένα HTML αρχείο με το όνομα index.html. Κάνουμε λοιπόν δεξί κλικ επάνω στο project και επιλέγουμε HTML από το εμφανιζόμενο μενού.</p>
+
+<img src="unit3/unit3-pic1.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+<p></p>
+
+<p>Στο επόμενο παράθυρο γράφουμε index για το HTML File Name και πατάμε Finish. Το αρχείο θα δημιουργηθεί αυτόματα μέσα στο φάκελο Web Pages.</p>
+
+<img src="unit3/unit3-pic2.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+<p></p>
+
+<p>Τώρα ας γράψουμε τον παρακάτω κώδικα μέσα στο index.html</p>
+
+<img src="unit3/unit3-pic3.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+<p></p>
+
+
+<p>Για να λάβουμε πληροφορίες από ένα HTML form χρησιμοποιούμε τα HTML <strong>input</strong> tags ενσωματωμένα στο HTML <strong>form</strong>. Στο παράδειγμά μας, δεχόμαστε τρεις τιμές στις οποίες αναφερόμαστε σε αυτές με το id τους – dept, dest και myday. Υπάρχουν δύο ακόμα input tags μέσα στη φόρμα. Το πρώτο στέλνει τις τιμές εκεί στην POST μέθοδο του SimpleServlet όπως ορίζεται στην αρχή της φόρμας. Το δεύτερο απλά καθαρίζει τα πεδία έτσι ώστε ο χρήστης να βάλει καινούργιες τιμές από την αρχή.</p>
+
+<p>Όπως ήδη αναφέραμε, το form action ορίζει ότι το SimpleServlet είναι εκείνο που θα δεχτεί τις τιμές που προωθεί η φόρμα. Έχουμε δημιουργήσει μια απλή HTML φόρμα στην οποία ο χρήστης μπορεί να καταχωρήσει τα στοιχεία της πτήσης για την οποία θέλει να κλείσει ένα εισιτήριο. Για να γίνει η καταχώρηση, πατάμε το κουμπί Submit το οποίο στέλνει τις πληροφορίες μέσω της POST μεθόδου στο SimpleServlet.Όμως ακόμα δεν έχουμε ορίσει κανέναν κώδικα για το Servlet να μπορεί να διαβάσει σωστά αυτές τις τιμές. Πάμε λοιπόν να δούμε πρώτα τον κώδικα του Servlet και μετά να τον αναλύσουμε.</p>
+	
+	<img src="unit3/unit3-pic4.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+	<p></p>	
+
+	<img src="unit3/unit3-pic5.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+	<p></p>	
+
+	<img src="unit3/unit3-pic6.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+	<p></p>
+
+	<img src="unit3/unit3-pic7.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+	<p></p>
+
+	<p>Οπότε πως μπορεί το Servlet τώρα να δεχτεί αυτά τα στοιχεία? Την ιδιότητα του αυτή την αποκτάει μέσα από το request αντικείμενο της μεθόδου doPost. Χρησιμοποιούμε την doPost για να διαβάσουμε και να απαντήσουμε το αίτημα του χρήστη, γιατί η φόρμα στέλνει στο Servlet την πληροφορία καλώντας την POST μέθοδο του HTTP. Ο κώδικα μας, είτε καλέσουμε την doPost είτε την doGet θα εκτελεστεί η processRequest μέθοδο.</p>
+
+	<p>Μέσα στην μέθοδο, καλούμε την μέθοδο getParameter του αντικειμένου request που έχει την δυνατότητα να διαβάσει την τιμή ενός συγκεκριμένου html tag αρκεί να δηλώσουμε σωστά το id του html tag.</p>
+
+	<p>Αφού διαβάσουμε την τιμή που περιέχει το κάθε html component, την αναθέτουμε σε Strings μεταβλητές αντίστοιχα. Εδώ χρειάζεται λίγο προσοχή. Ότι είδος πληροφορίας και αν καταχωρήσει ο χρήστης, θα το διαβάσει το request.getParameter σαν String. Στο δικό μας παράδειγμα, επειδή ζητάμε ονόματα, δεν χρειάζεται κάποια μετατροπή. Αν όμως ζητούσαμε και αριθμητικές τιμές (π.χ επιθυμητή τιμή εισιτηρίου) τότε θα χρειαζόταν να κάνουμε μετατροπή της μεταβλητής από String σε integer ή double.</p>
+
+	<p>Για παράδειγμα, ας υποθέσουμε ότι διαβάζουμε ένα html tag με το id price.</p>
+
+	<p><strong>String ticketPrice = request.getParameter(“price”);</strong></p>
+	<p><strong>double ticket = Double.valueOf(ticketPrice);</strong></p>
+
+	<p>Αφού λοιπόν διαβάσουμε την πληροφορία και την έχουμε μετατρέψει στην επιθυμητή μορφή, πρέπει να πάρουμε την απόφαση αν θα εκτελέσει το Servlet την λογική και θα επιστρέψει κάποια απάντηση στον τελικό χρήστη, ή θα μεταφέρει την πληροφορία σαν java αντικείμενο σε κάποια άλλη κλάση της εφαρμογής για να εκτελεστεί κάποιο συγκεκριμένο business logic. Στο δικό μας παράδειγμα, απλά διαβάζουμε την πληροφορία και το ίδιο το Servlet δείχνει το αποτέλεσμα στο τελικό χρήστη. Ταυτόχρονα, δια μέσω του <strong>a</strong> tag, επιτρέπουμε στον χρήστη να μπορεί να επιστρέψει στο homepage της εφαρμογής. Τέλος χρησιμοποιούμε το LocalDateTime σε συνδυασμό με το DateTimeFormatter για να δείξουμε την ημερομηνία και την ώρα που έγινε η κράτηση.</p>
+
+		<img src="unit3/unit3-pic8.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+		<p></p>
+
+		<img src="unit3/unit3-pic9.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
+		<p></p>
+
+
+
+
 						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
 						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
 						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
@@ -303,100 +329,12 @@
 							<li>Battling challenging cost targets and the need to build.</li>
 						</ul>
 						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
-						<h2>ΕΝΟΤΗΤΕΣ</h2>
+						
 						<!-- sectionRow -->
 						<section class="sectionRow">
-							<h2 class="h6 text-uppercase fw-semi rowHeading">ΒΑΣΙΚΕΣ ΕΝΝΟΙΕΣ ΠΡΟΓΡΑΜΜΑΤΙΣΜΟΥ JAVA EE (JAKARTA)</h2>
+							
 							<!-- sectionRowPanelGroup -->
-							<div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist" aria-multiselectable="true">
-								<!-- panel -->
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingOne">
-										<h3 class="panel-title fw-normal">
-											<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="jakarta-unit1-getting-started-with-servlets.html" style="color:blue;">ΕΝΟΤΗΤΑ 1 JAKARTA EE - Getting Started With Servlets</a>
-												<span class="accOpenerCol">
-												
-												<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-												</span>
-												<!--<span class="accOpenerCol hd-phone">
-													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-													<time datetime="2011-01-12" class="timeCount">17 Min</time>
-												</span>-->
-											</a>
-										</h3>
-										
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h3 class="panel-title fw-normal">
-												<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="jakarta-unit2-using-a-servlet-to-display-dynamic-content.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 JAKARTA EE - Using a Servlet To Display Dynamic Content</a>
-													<span class="accOpenerCol">
-													
-													<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-													</span>
-													<!--<span class="accOpenerCol hd-phone">
-														<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-														<time datetime="2011-01-12" class="timeCount">17 Min</time>
-													</span>-->
-												</a>
-											</h3>
-											
-										</div>
-
-
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingOne">
-												<h3 class="panel-title fw-normal">
-													<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="jakarta-unit3-passing-data-to-a-servlet-from-a-html-page.html" style="color:blue;">ΕΝΟΤΗΤΑ 3 JAKARTA EE - Passing Data to a Servlet from a HTML page</a>
-														<span class="accOpenerCol">
-														
-														<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-														</span>
-														<!--<span class="accOpenerCol hd-phone">
-															<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-															<time datetime="2011-01-12" class="timeCount">17 Min</time>
-														</span>-->
-													</a>
-												</h3>
-												
-											</div>
-
-									
-									<!-- collapseOne -->
-								
-								</div>
-																	
-
-																						
-
-																									
-
-																									
-
-																											
-
-
-																												
-
-
-																														
-
-
-																															
-
-																																	
-
-
-
-								<!-- panel -->
-								
-								<!-- panel -->
-							
-								<!-- panel -->
-								
-								<!-- panel -->
-							
-							</div>
+						
 							
 							
 						</section>
@@ -405,18 +343,7 @@
 						<!-- sectionRow -->
 					
 						<!-- bookmarkFoot -->
-						<div class="bookmarkFoot">
-							<div class="bookmarkCol">
-								<ul class="socail-networks list-unstyled">
-									<li><a href="#" class="facebook"><span class="fab fa-facebook-f"></span></a></li>
-									<li><a href="#" class="linkedin"><span class="fab fa-linkedin"></span></a></li>
-									
-								</ul>
-							</div>
-							<div class="bookmarkCol text-right">
-								<a href="#" class="btn btn-theme btn-warning text-uppercase fw-bold">Bookmark this course</a>
-							</div>
-						</div>
+				
 						<h2>ΕΙΣΗΓΗΤΗΣ</h2>
 						<!-- instructorInfoBox -->
 						<div class="instructorInfoBox">
@@ -442,7 +369,7 @@
 						<!-- widget course select -->
 						<section class="widget widget_box widget_course_select">
 							<header class="widgetHead text-center bg-theme">
-								<h3 class="text-uppercase">ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ JAVA EE</h3>
+								<h3 class="text-uppercase">ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ JAKARTA EE</h3>
 							</header>
 							<strong class="price element-block font-lato" data-label="price:">FREE</strong>
 							<ul class="list-unstyled font-lato">
@@ -611,7 +538,7 @@
 								<ul class="fooer-navigation list-unstyled">
 									<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
 									<li><a href="https://kassapoglou.github.io/main/training-events.html">ΠΡΟΓΡΑΜΜΑ</a></li>
-									<li><a href="#">ΜΑΘΗΜΑΤΑ</li>
+									<li><a href="https://kassapoglou.github.io/main/course-list-all.html">ΜΑΘΗΜΑΤΑ</li>
 									<li><a href="#">ΧΟΡΗΓΟΙ</a></li>
 									<li><a href="#">ΤΕΧΝΟΛΟΓΙΑ</a></li>
 									<li><a href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
