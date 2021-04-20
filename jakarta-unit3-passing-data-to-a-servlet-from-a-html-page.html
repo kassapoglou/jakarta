@@ -275,26 +275,14 @@
 
 <p>Τώρα ας γράψουμε τον παρακάτω κώδικα μέσα στο index.html</p>
 
-<img src="unit3/unit3-pic3.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
-<p></p>
-
-
+<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+<script src="https://gist.github.com/kassapoglou/cdfbeaf8a9641d85ae89e2a8e7902279.js"></script>
 <p>Για να λάβουμε πληροφορίες από ένα HTML form χρησιμοποιούμε τα HTML <strong>input</strong> tags ενσωματωμένα στο HTML <strong>form</strong>. Στο παράδειγμά μας, δεχόμαστε τρεις τιμές στις οποίες αναφερόμαστε σε αυτές με το id τους – dept, dest και myday. Υπάρχουν δύο ακόμα input tags μέσα στη φόρμα. Το πρώτο στέλνει τις τιμές εκεί στην POST μέθοδο του SimpleServlet όπως ορίζεται στην αρχή της φόρμας. Το δεύτερο απλά καθαρίζει τα πεδία έτσι ώστε ο χρήστης να βάλει καινούργιες τιμές από την αρχή.</p>
 
 <p>Όπως ήδη αναφέραμε, το form action ορίζει ότι το SimpleServlet είναι εκείνο που θα δεχτεί τις τιμές που προωθεί η φόρμα. Έχουμε δημιουργήσει μια απλή HTML φόρμα στην οποία ο χρήστης μπορεί να καταχωρήσει τα στοιχεία της πτήσης για την οποία θέλει να κλείσει ένα εισιτήριο. Για να γίνει η καταχώρηση, πατάμε το κουμπί Submit το οποίο στέλνει τις πληροφορίες μέσω της POST μεθόδου στο SimpleServlet.Όμως ακόμα δεν έχουμε ορίσει κανέναν κώδικα για το Servlet να μπορεί να διαβάσει σωστά αυτές τις τιμές. Πάμε λοιπόν να δούμε πρώτα τον κώδικα του Servlet και μετά να τον αναλύσουμε.</p>
 	
-	<img src="unit3/unit3-pic4.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
-	<p></p>	
-
-	<img src="unit3/unit3-pic5.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
-	<p></p>	
-
-	<img src="unit3/unit3-pic6.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
-	<p></p>
-
-	<img src="unit3/unit3-pic7.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
-	<p></p>
-
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/7a40794a06fc09d606c0c064caed294f.js"></script>
 	<p>Οπότε πως μπορεί το Servlet τώρα να δεχτεί αυτά τα στοιχεία? Την ιδιότητα του αυτή την αποκτάει μέσα από το request αντικείμενο της μεθόδου doPost. Χρησιμοποιούμε την doPost για να διαβάσουμε και να απαντήσουμε το αίτημα του χρήστη, γιατί η φόρμα στέλνει στο Servlet την πληροφορία καλώντας την POST μέθοδο του HTTP. Ο κώδικα μας, είτε καλέσουμε την doPost είτε την doGet θα εκτελεστεί η processRequest μέθοδο.</p>
 
 	<p>Μέσα στην μέθοδο, καλούμε την μέθοδο getParameter του αντικειμένου request που έχει την δυνατότητα να διαβάσει την τιμή ενός συγκεκριμένου html tag αρκεί να δηλώσουμε σωστά το id του html tag.</p>
@@ -313,9 +301,6 @@
 
 		<img src="unit3/unit3-pic9.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
 		<p></p>
-
-
-
 
 						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
 						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>

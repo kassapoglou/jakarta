@@ -267,86 +267,10 @@
 
 					<p>Μπορείτε να ανατρέξετε στην Ενότητα 1 και να αντιγράψετε το project που είχαμε δημιουργήσει. Η μόνη αλλαγή που έχουμε να κάνουμε τώρα στο Servlet είναι να προσθέσουμε μια καινούργια μεταβλητή είδος LocalDateTime και να την καλέσουμε μέσα στην processRequest μέθοδο προσθέτοντας το synchronized.</p>
 
-					<pre class="prettyprint"><xmp>
-		
-package com.mycompany.JavaEE8BasicServlet;
-
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-@WebServlet(name = "SimpleServlet", urlPatterns = {"/SimpleServlet"})
-public class SimpleServlet extends HttpServlet {
-    
-    
-    LocalDateTime currentDateAndTime = LocalDateTime.now();
-
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        
-        
-        String dept = request.getParameter("dept");
-        String dest = request.getParameter("dest");
-        String myday = request.getParameter("myday");
-        
-        
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Kassapoglou</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<p>Your Departure City is: " + dept + "</p>");
-            out.println("<p>Your final Destination is: " + dest + "</p>");
-            out.println("<p>The day you are flying is : " + myday + "</p>");
-            out.println("<p>Your reservation took place on:</p>");
-            synchronized(currentDateAndTime){
-                currentDateAndTime = LocalDateTime.now();
-            }
-            DateTimeFormatter format = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-            String formatDateTime = currentDateAndTime.format(format);
-            out.println("<p>" + formatDateTime +" </p>");
-            out.println("<a href='index.html'>Add another flight </a>");
-            out.println("</body>");
-            out.println("</html>");
-        }
-    }
-
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
-    }
-
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
-    }
-
-    @Override
-    public String getServletInfo() {
-        return "Short description";
-    }
-
-}
-					</xmp>
-					</pre>
 					
-					<img src="unit2/unit2-pic1.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
-						<p></p>
-						<img src="unit2/unit2-pic2.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
-						<p></p>
+					
+					<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+					<script src="https://gist.github.com/kassapoglou/08eca43733063bc893704dc1d159e8b4.js"></script>
 						
 					<p>Αν τρέξουμε τώρα το project μας θα δούμε το εξής αποτέλεσμα στον browser.</p>
 					

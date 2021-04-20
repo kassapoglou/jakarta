@@ -296,68 +296,10 @@
 
 						<p>Αν δεν θέλετε να διαβάσετε όλο το άρθρο, ή βρίσκεται κάπως δύσκολο να καταλάβετε όλες τις αλλαγές, σας δίνω εδώ πως θα μοιάζει η τελική μορφή του pom.xml μετά τις τροποποιήσεις. Μπορείτε απλά να το αντιγράψετε στο pom.xml του project που μόλις δημιουργήσαμε.</p>
 
-						<p><strong>pom.xml</strong></p>
-<pre class="prettyprint"><xmp>
-	<?xml version="1.0" encoding="UTF-8"?>
-	<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	  <modelVersion>4.0.0</modelVersion>
-	  <groupId>com.mycompany</groupId>
-	  <artifactId>JavaEE8BasicServlet</artifactId>
-	  <version>1.0-SNAPSHOT</version>
-	  <packaging>war</packaging>
-	  <properties>
-		<maven.compiler.target>11</maven.compiler.target>
-		<version.wildfly>23.0.0.Final</version.wildfly>
-		<failOnMissingWebXml>false</failOnMissingWebXml>
-		<maven.compiler.source>11</maven.compiler.source>
-		<final.name>JavaEE8BasicServlet</final.name>
-	  </properties>
-	  <dependencies>
-		<dependency>
-		  <groupId>jakarta.platform</groupId>
-		  <artifactId>jakarta.jakartaee-api</artifactId>
-		  <scope>provided</scope>
-		  <version>8.0.0</version>
-	  </dependency>
-	  </dependencies>
-	  <build>
-		<finalName>JavaEE8BasicServlet</finalName>
-	  </build>
-	 <profiles>
-		<profile>
-		  <id>wildfly</id>
-		  <activation>
-			<activeByDefault>true</activeByDefault>
-		  </activation>
-		  <build>
-			<plugins>
-			  <plugin>
-				<groupId>org.wildfly.plugins</groupId>
-				<artifactId>wildfly-jar-maven-plugin</artifactId>
-				<version>4.0.2.Final</version>
-				<executions>
-				  <execution>
-					<goals>
-					  <goal>package</goal>
-					</goals>
-				  </execution>
-				</executions>
-				<configuration>
-				  <feature-pack-location>wildfly@maven(org.jboss.universe:community-universe)#${version.wildfly}</feature-pack-location>
-				  <layers>
-					<!--<layer>jaxrs-server</layer>-->
-	
-				  </layers>
-				</configuration>
-			  </plugin>
-			</plugins>
-		  </build>
-		</profile>
-	  </profiles>
-	</project>
-</xmp>
-</pre>
+											
+					<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+					<script src="https://gist.github.com/kassapoglou/722fe1b201d46ca4be50d3f2a427b028.js"></script>
+						
 
 <p>Διαγράφουμε λοιπόν το Index.html από το Web Pages. Από το πακέτο com.mycompany.JavaEE8BasicServlet στο Source Packages διαγράφετε τα δύο java αρχεία. Τέλος, μέσα στο META-INF, του φακέλου Other Resources, διαγράφουμε το microprofile-config.properties. </p>
 
@@ -400,12 +342,8 @@
 
 <p>Ας αλλάξουμε τον κώδικα μέσα στην processRequest μέθοδο για να μας δείξει ένα απλό μήνυμα στον browser.</p>
 
-<img src="unit1/unit1-pic9.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
-						<p></p>
-
-<img src="unit1/unit1-pic10.jpg" alt="Δωρεάν Μαθήματα και Σεμινάρια Jakarta EE" class="center">
-						<p></p>
-
+<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+<script src="https://gist.github.com/kassapoglou/cd6771d913c25dee9f04757d2f1d37fd.js"></script>	
 
 <p>Όταν τελειώσετε με τα παραπάνω βήματα, θα δείτε ότι πάνω από το όνομα της κλάσης υπάρχει ένα annotation με το όνομα @WebServlet. Θα βασιστούμε στην λειτουργία του για να εκτελεστεί σωστά η εφαρμογή μας. Αυτό που στην πραγματικότητα κάνει το συγκεκριμένο annotation είναι να προσφέρει μια αντιστοιχία του Servlet και του URL στο οποίο ακούει χωρίς να χρειάζεται το web.xml. Υπάρχουν αρκετά στοιχεία (elements) που μπορούμε να προσθέσουμε αμέσως μετά το @WebServlet όπως δείχνει ο πιο κάτω πίνακας:</p>
 
